@@ -36,6 +36,8 @@ public class TransformerRegistry {
         registTransformer(new ReplaceTransformer());
         registTransformer(new FilterTransformer());
         registTransformer(new GroovyTransformer());
+        registTransformer(new AESDecryptTransformer());
+        registTransformer(new AESEncryptTransformer());
     }
 
     public static void loadTransformerFromLocalStorage() {
